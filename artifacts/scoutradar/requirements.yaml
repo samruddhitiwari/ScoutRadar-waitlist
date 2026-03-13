@@ -1,0 +1,11 @@
+packages:
+  "framer-motion": "For premium entrance, scroll animations, and fluid interactions"
+  "clsx": "Utility for constructing conditional tailwind classes safely"
+  "tailwind-merge": "Utility for merging tailwind classes without conflicts"
+  "lucide-react": "Beautiful consistent iconography for features and UI elements"
+
+images: []
+
+notes:
+  - Landing page relies on existing public assets: /product-ui.png, /product-hero.png
+  - Waitlist mutation submits directly to /api/waitlist endpoint using standard fetch

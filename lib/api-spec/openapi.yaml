@@ -1,6 +1,5 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
   description: API specification
@@ -10,6 +9,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: waitlist
+    description: Waitlist operations
 paths:
   /healthz:
     get:
@@ -24,6 +25,49 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /waitlist:
+    post:
+      operationId: joinWaitlist
+      tags: [waitlist]
+      summary: Join waitlist
+      description: Add an email to the waitlist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WaitlistRequest"
+      responses:
+        "200":
+          description: Successfully joined waitlist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WaitlistResponse"
+        "409":
+          description: Email already on waitlist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      operationId: getWaitlistCount
+      tags: [waitlist]
+      summary: Get waitlist count
+      description: Returns total number of waitlist signups
+      responses:
+        "200":
+          description: Waitlist count
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WaitlistCountResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +77,35 @@ components:
           type: string
       required:
         - status
-
+    WaitlistRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+      required:
+        - email
+    WaitlistResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+      required:
+        - success
+        - message
+    WaitlistCountResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+      required:
+        - count
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error

@@ -1,3 +1,25 @@
+# ScoutRadar Landing Page
+
+## Overview
+
+ScoutRadar is an AI Chrome extension for recruiters. This project is a premium SaaS landing page with waitlist functionality.
+
+## Stack
+
+- **Frontend**: React + Vite + Tailwind CSS + Framer Motion (artifact: `artifacts/scoutradar`)
+- **Backend**: Express 5 API server (`artifacts/api-server`)
+- **Database**: PostgreSQL + Drizzle ORM (waitlist table)
+- **Routing**: Wouter (client-side)
+
+## Features
+
+- Full landing page: Hero, Social Proof, How It Works, Features, Product Preview, Benefits, Pricing, CTA, Footer
+- Waitlist form with email validation, success/duplicate handling
+- REST API: `POST /api/waitlist` (join), `GET /api/waitlist` (count)
+- Product UI mockup images in `artifacts/scoutradar/public/`
+
+---
+
 # Workspace
 
 ## Overview
