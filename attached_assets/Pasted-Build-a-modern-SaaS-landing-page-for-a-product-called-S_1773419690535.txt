@@ -1,0 +1,317 @@
+Build a modern SaaS landing page for a product called **ScoutRadar**.
+
+ScoutRadar is an AI Chrome extension for recruiters that scans LinkedIn search results and ranks the best candidates instantly.
+
+I will provide product images and UI mockups as context. Use them as visual inspiration.
+
+The landing page must look like a **premium startup landing page suitable for Product Hunt**.
+
+Use a **modern dark theme with purple gradients** similar to AI startups.
+
+Tech stack:
+
+• React
+• Tailwind CSS
+• Simple responsive layout
+• Supabase for storing waitlist emails
+
+The page should be fast, minimal, and conversion-focused.
+
+---
+
+# BRAND
+
+Product name: ScoutRadar
+
+Tagline:
+**"Find the best LinkedIn candidates in seconds."**
+
+Short description:
+AI Chrome extension that scans LinkedIn search results, ranks top candidates, and generates personalized outreach messages.
+
+Primary color:
+Purple gradient (#7C3AED → #A855F7)
+
+Secondary colors:
+Dark background (#0F0F1A)
+Light text (#E5E7EB)
+
+Style inspiration:
+Linear
+Arc
+Vercel
+Superhuman
+OpenAI product pages
+
+---
+
+# LANDING PAGE STRUCTURE
+
+## 1. HERO SECTION
+
+Large hero section centered on screen.
+
+Left side:
+
+• Product name: ScoutRadar
+• Tagline: "Find the best LinkedIn candidates in seconds"
+
+Subheadline:
+
+"AI-powered Chrome extension that scans LinkedIn search results and ranks top candidates instantly."
+
+Buttons:
+
+Primary CTA
+**Join Waitlist**
+
+Secondary CTA
+**See How It Works**
+
+Right side:
+
+Show product UI mockup (I will provide image).
+
+Background:
+
+Animated purple gradient or glowing particle background.
+
+---
+
+# 2. WAITLIST FORM (IMPORTANT)
+
+Add a **waitlist signup form in the hero section**.
+
+Form fields:
+
+• Email input
+• Join Waitlist button
+
+When submitted:
+
+• store the email in Supabase
+• show success message
+• disable duplicate submissions
+
+Example success message:
+
+"You're on the waitlist! We'll notify you at launch."
+
+Also add a small counter:
+
+**"1,000+ recruiters already joined the waitlist"**
+
+---
+
+# 3. SOCIAL PROOF
+
+Row under hero.
+
+Text:
+
+Trusted by recruiters worldwide
+
+Show stats:
+
+• 2,500+ recruiters using ScoutRadar
+• 50,000+ candidates scanned
+• 40% faster sourcing
+
+---
+
+# 4. HOW IT WORKS
+
+3-step horizontal layout with icons.
+
+Step 1
+Title: Scan LinkedIn Search Results
+
+Description:
+ScoutRadar scans entire LinkedIn search pages instantly and extracts candidate profiles.
+
+Step 2
+Title: AI Ranks the Best Candidates
+
+Description:
+Our AI analyzes experience, skills, and company history to score each candidate.
+
+Step 3
+Title: Reach Out Faster
+
+Description:
+Generate personalized outreach messages and contact top candidates instantly.
+
+---
+
+# 5. PRODUCT FEATURES
+
+Create a **grid with 6 feature cards**.
+
+Feature 1
+AI Candidate Ranking
+
+Feature 2
+LinkedIn Search Scanner
+
+Feature 3
+Candidate Summaries
+
+Feature 4
+Personalized Outreach Generator
+
+Feature 5
+Candidate Pipeline Tracking
+
+Feature 6
+Export to ATS or CRM
+
+Each card should include:
+
+• icon
+• title
+• short description
+
+---
+
+# 6. PRODUCT PREVIEW
+
+Full width section showing UI screenshot.
+
+Headline:
+
+**Turn LinkedIn into a recruiting powerhouse.**
+
+Short description explaining the product.
+
+---
+
+# 7. BENEFITS SECTION
+
+Three columns:
+
+Save hours of sourcing time
+
+Find hidden talent faster
+
+Improve response rates with better outreach
+
+---
+
+# 8. PRICING
+
+Simple pricing cards.
+
+Free Plan
+$0
+Scan 20 profiles/day
+
+Pro Plan
+$49/month
+
+Includes:
+
+• Unlimited scans
+• AI candidate ranking
+• Outreach generator
+
+Team Plan
+$99/month
+
+Includes:
+
+• Shared pipelines
+• Team analytics
+
+Highlight the Pro plan as "Most Popular".
+
+---
+
+# 9. FINAL CTA
+
+Large section before footer.
+
+Headline:
+
+**Start finding better candidates today**
+
+Button:
+
+Join Waitlist
+
+Subtext:
+
+Free to try. No credit card required.
+
+---
+
+# 10. FOOTER
+
+Include:
+
+Product
+Features
+Pricing
+Contact
+Privacy
+Twitter
+LinkedIn
+
+---
+
+# WAITLIST BACKEND
+
+Use **Supabase** to store waitlist emails.
+
+Create table:
+
+waitlist
+
+Columns:
+
+id (uuid primary key)
+email (text unique)
+created_at (timestamp)
+
+Add frontend code to insert emails into Supabase when users submit the waitlist form.
+
+Handle errors and duplicates.
+
+---
+
+# UI DESIGN REQUIREMENTS
+
+Use:
+
+• rounded cards
+• soft shadows
+• purple gradient buttons
+• subtle glow effects
+• modern spacing
+
+Use Tailwind for styling.
+
+Page must be **fully responsive**.
+
+Desktop first, mobile optimized.
+
+Add subtle animations using:
+
+Framer Motion or CSS transitions.
+
+---
+
+# EXTRA DETAILS
+
+Include:
+
+• sticky navbar
+• smooth scroll
+• clean typography
+• hero gradient background
+• glowing accent elements
+
+Make the page feel like a **high-end AI startup landing page**.
+
+Focus on clarity, modern design, and conversion.
+
+Return **complete React + Tailwind code including the Supabase waitlist integration**.
