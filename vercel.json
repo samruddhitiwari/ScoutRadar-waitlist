@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "rootDirectory": "artifacts/scoutradar"
+  "buildCommand": "cd artifacts/scoutradar && npm install && npm run build",
+  "outputDirectory": "artifacts/scoutradar/dist"
 }
