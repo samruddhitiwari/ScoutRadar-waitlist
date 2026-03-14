@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 process.env.TAILWIND_DISABLE_OXIDE = "1";
+=======
+>>>>>>> 4f650c5af20c6c828e3273eee2626bd0ce4d1a6c
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";

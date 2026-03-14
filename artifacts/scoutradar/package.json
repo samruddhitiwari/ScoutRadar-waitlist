@@ -47,8 +47,11 @@
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "catalog:",
     "input-otp": "^1.4.2",
+<<<<<<< HEAD
     "lightningcss": "^1.32.0",
     "lightningcss-win32-x64-msvc": "^1.32.0",
+=======
+>>>>>>> 4f650c5af20c6c828e3273eee2626bd0ce4d1a6c
     "lucide-react": "catalog:",
     "next-themes": "^0.4.6",
     "react": "catalog:",
@@ -75,7 +78,11 @@
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
+<<<<<<< HEAD
     "tailwindcss": "3.4.4",
+=======
+    "tailwindcss": "catalog:",
+>>>>>>> 4f650c5af20c6c828e3273eee2626bd0ce4d1a6c
     "vite": "catalog:"
   }
 }
